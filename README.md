@@ -6,7 +6,7 @@ Portal estático da turma **QA-TIC64 / OxeTech Academy · 2026** com contatos, c
 
 ```
 tic64/
-├── main.html              # Página principal (estrutura HTML)
+├── index.html             # Página principal (estrutura HTML)
 ├── README.md
 └── assets/
     ├── css/
@@ -18,7 +18,7 @@ tic64/
 
 ## Como executar
 
-Por ser uma página totalmente estática, basta abrir `main.html` em qualquer navegador moderno.
+Por ser uma página totalmente estática, basta abrir `index.html` em qualquer navegador moderno.
 
 Para uma experiência mais próxima de um servidor real (recomendado em desenvolvimento), use um servidor HTTP simples:
 
@@ -30,7 +30,11 @@ python -m http.server 8000
 npx serve .
 ```
 
-Depois acesse `http://localhost:8000/main.html`.
+Depois acesse `http://localhost:8000/`.
+
+## Site publicado
+
+🌐 **GitHub Pages:** [vinicq-edge.github.io/tic64-qa-teoria-e-pratica](https://vinicq-edge.github.io/tic64-qa-teoria-e-pratica/)
 
 ## Tecnologias
 
