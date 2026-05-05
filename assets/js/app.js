@@ -70,11 +70,16 @@ function showView(name) {
     closeSidebar();
 }
 
-function scrollTo(id) {
+function scrollTo(id, activeNav) {
+    if (activeNav) {
+        document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+        const nav = document.getElementById('nav-' + activeNav);
+        if (nav) nav.classList.add('active');
+    }
     setTimeout(() => {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 50);
+    }, 150);
 }
 
 /* ── sidebar mobile ── */
