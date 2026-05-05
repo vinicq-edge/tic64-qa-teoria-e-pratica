@@ -50,7 +50,9 @@ function filterStudents(query) {
         .map((s, i) => ({ student: s, index: i }))
         .filter(({ student, index }) => {
             const num = String(index + 1).padStart(2, '0');
-            return student.name.toLowerCase().includes(q) || num.includes(q);
+            return student.name.toLowerCase().includes(q)
+                || (student.email && student.email.toLowerCase().includes(q))
+                || num.includes(q);
         });
     renderStudents(filtered);
 }
