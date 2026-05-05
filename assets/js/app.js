@@ -70,12 +70,23 @@ function showView(name) {
     closeSidebar();
 }
 
-function scrollTo(id, activeNav) {
-    if (activeNav) {
-        document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-        const nav = document.getElementById('nav-' + activeNav);
-        if (nav) nav.classList.add('active');
-    }
+function goToAnchor(view, anchorId, navId) {
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.getElementById('view-' + view).classList.add('active');
+
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    const nav = document.getElementById('nav-' + navId);
+    if (nav) nav.classList.add('active');
+
+    closeSidebar();
+
+    setTimeout(() => {
+        const el = document.getElementById(anchorId);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 150);
+}
+
+function scrollTo(id) {
     setTimeout(() => {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
