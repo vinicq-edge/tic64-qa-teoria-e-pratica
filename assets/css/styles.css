@@ -477,6 +477,13 @@ body {
 
 .ativ-header .hero-badge { margin-bottom: 14px; }
 
+.ativ-drive-info {
+    margin-top: 14px;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.38);
+    letter-spacing: 0.02em;
+}
+
 .ativ-header h1 {
     color: var(--white);
     font-size: clamp(1.5rem, 3vw, 2.4rem);
