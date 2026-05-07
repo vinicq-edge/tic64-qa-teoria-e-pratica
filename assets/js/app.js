@@ -106,5 +106,41 @@ function closeSidebar() {
     document.body.style.overflow = '';
 }
 
+/* ── copy code ── */
+function copyCode(btn) {
+    const targetId = btn.getAttribute('data-target');
+    const text = document.getElementById(targetId).textContent;
+    const label = btn.querySelector('span');
+
+    const onCopied = () => {
+        btn.classList.add('copied');
+        label.textContent = 'Copiado!';
+        setTimeout(() => {
+            btn.classList.remove('copied');
+            label.textContent = 'Copiar';
+        }, 2000);
+    };
+
+    const fallback = () => {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        onCopied();
+    };
+
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(onCopied).catch(fallback);
+    } else {
+        fallback();
+    }
+}
+
 /* ── init ── */
-renderStudents(students.map((s, i) => ({ student: s, index: i })));
+if (document.getElementById('studentList')) {
+    renderStudents(students.map((s, i) => ({ student: s, index: i })));
+    if (window.location.hash === '#atividade') showView('atividade');
+}
