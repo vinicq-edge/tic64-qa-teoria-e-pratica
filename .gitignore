@@ -1,3 +1,38 @@
+# Dados internos e configurações locais
+.claude/
+**/settings.local.json
+
+# Documentos e planilhas
+*.docx
+*.xlsx
+*.xls
+*.pdf
+*.pptx
+
+# Apresentações HTML geradas
+*.html
+
+# Imagens
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.bmp
+*.ico
+
+# Markdown de conteúdo interno
+*.md
+
+# Scripts de build internos
+_build_*.py
+
+# Arquivos temporários e backups
+*.bak
+*.bak_*
+*.tmp
+
 # OS
 .DS_Store
 Thumbs.db
@@ -20,6 +55,3 @@ node_modules/
 # Ambiente
 .env
 .env.local
-
-# Claude Code
-.claude/
