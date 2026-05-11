@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de Estudo — QA-TIC64</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ══ SIDEBAR ══ -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+        <img src="https://tic64.vertex.org.br/images/logos/oxetech-academy-white.png" alt="OxeTech Academy">
+        <span class="sidebar-tag">QA-TIC64 · 2026</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <span class="nav-section-title">Menu</span>
+
+        <a href="index.html" class="nav-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            Início
+        </a>
+
+        <a href="index.html#equipe" class="nav-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+            Equipe
+        </a>
+
+        <a href="index.html#canais" class="nav-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Canais
+        </a>
+
+        <span class="nav-section-title" style="margin-top:8px;">Conteúdo</span>
+
+        <a href="https://oxetech.al.gov.br/sala-de-aula/751" target="_blank" rel="noopener noreferrer" class="nav-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            Sala de Aula
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="margin-left:auto;opacity:0.45;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+        <a href="dicas.html" class="nav-item active">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+            Dicas de Estudo
+        </a>
+
+        <a href="index.html#atividade" class="nav-item highlight">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Atividade da Semana
+            <span class="nav-badge">57</span>
+        </a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <img src="https://www.vertex.org.br/wp-content/uploads/2025/02/logo-vertex-vetor.png" alt="VERTEX">
+    </div>
+</aside>
+
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- ══ MAIN ══ -->
+<div class="main">
+
+    <!-- TOPBAR mobile -->
+    <div class="topbar">
+        <button class="hamburger" onclick="openSidebar()" aria-label="Menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <line x1="3" y1="12" x2="21" y2="12"/>
+                <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+        </button>
+        <img src="https://tic64.vertex.org.br/images/logos/oxetech-academy-white.png" alt="OxeTech Academy" class="topbar-logo">
+    </div>
+
+    <div class="dicas-header">
+        <div class="hero-badge">Conteúdo</div>
+        <h1>Dicas &amp; <span>Recursos</span></h1>
+        <p>Materiais de apoio para acelerar seu aprendizado</p>
+    </div>
+
+    <div class="dicas-body">
+
+        <a href="index.html" class="back-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 5l-7 7 7 7"/>
+            </svg>
+            Voltar
+        </a>
+
+        <article class="post-card">
+            <div class="post-card-top">
+                <div class="post-author-row">
+                    <div class="post-avatar" style="background: var(--orange)">VQ</div>
+                    <div>
+                        <span class="post-author-name">Vinícius Queiroz</span>
+                        <span class="post-meta">Instrutor · Mai 2026</span>
+                    </div>
+                </div>
+                <span class="post-tag tag-orange">Estratégia de Estudo</span>
+            </div>
+
+            <div class="post-body">
+                <h2>Estudar de forma inteligente com IA</h2>
+
+                <div class="post-content">
+                    <p>O livro <em>Foundations of Software Testing: ISTQB Certification</em> é uma versão mais explicativa e voltada para a certificação Foundation do ISTQB. A base real do conteúdo continua sendo o syllabus que adicionei aqui na plataforma. Os outros materiais servem mais como apoio e aprofundamento dessa base.</p>
+
+                    <p>Minha sugestão é baixar o syllabus e estudar por tópicos. Isso funciona melhor do que tentar consumir tudo de forma linear.</p>
+
+                    <p>Uma abordagem que ajuda bastante é criar um agente no <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Gemini</a>, <a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">Copilot</a> ou <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a> com contexto de analista de qualidade. Anexa o PDF do syllabus e vai conduzindo o estudo por assunto. Pede para explicar um tópico específico, gerar exemplos práticos, aprofundar conceitos ou comparar cenários reais de teste.</p>
+
+                    <p>Outra opção boa é subir o syllabus no <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer">NotebookLM</a> e estudar por lá. Para material mais teórico, ele costuma funcionar bem porque mantém o contexto do documento durante a conversa.</p>
+
+                    <p>Baixa o syllabus oficial aqui: <a href="https://bstqb.online/files/syllabus_ctfl_4.0br.pdf" target="_blank" rel="noopener noreferrer">Foundation Level Syllabus</a></p>
+
+                    <p>Adiciona o prompt abaixo e vê a diferença na qualidade das respostas:</p>
+
+                    <div class="code-block-wrap">
+                        <div class="code-block-header">
+                            <span class="code-block-label">Prompt · Analista QA + ISTQB</span>
+                            <button class="copy-btn" onclick="copyCode(this)" data-target="prompt-istqb">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                <span>Copiar</span>
+                            </button>
+                        </div>
+                        <pre class="code-block" id="prompt-istqb"># Papel
+
+Atue como um Analista de QA Sênior e Professor Especialista em Certificações de Teste de Software, com foco em preparação para o ISTQB Foundation e aplicação prática no mercado.
+
+Sua principal fonte de verdade é o syllabus oficial BSTQB/ISTQB anexado no PDF.
+
+Seu papel não é só resumir conteúdo. Você deve ensinar como alguém que trabalha na área e precisa fazer outra pessoa realmente entender o conceito, aplicar no projeto e também acertar questões de certificação.
+
+# Objetivo
+
+Explicar conceitos, técnicas e termos do ISTQB de forma clara, prática e didática, conectando teoria com situações reais de QA.
+
+Toda resposta deve ajudar em dois pontos:
+
+- entendimento real do tema
+- preparação para prova e aplicação prática no trabalho
+
+# Contexto
+
+O PDF anexado contém o syllabus oficial do ISTQB Foundation.
+
+As respostas devem se basear prioritariamente nesse material.
+
+Você pode complementar com conhecimento prático de mercado, mas deve deixar claro quando algo não estiver explicitamente descrito no syllabus.
+
+# Como responder
+
+Sempre:
+
+- vá direto ao ponto
+- explique de forma clara e natural
+- use linguagem humana e profissional
+- diferencie teoria de aplicação prática
+- mostre impacto e risco quando fizer sentido
+- conecte tópicos relacionados do syllabus
+- explique onde isso aparece no dia a dia de QA
+- use exemplos concretos de projeto
+- simplifique sem perder precisão técnica
+
+# O que evitar
+
+Não:
+
+- resumir demais
+- responder de forma genérica
+- usar linguagem corporativa vazia
+- agir como professor acadêmico
+- inventar conteúdo fora do syllabus sem avisar
+- responder só com definição decorada
+- fazer introdução longa
+- fazer conclusão genérica
+- "encher linguiça"
+
+# Estrutura obrigatória da resposta
+
+## 1. Definição Técnica
+
+Comece com a definição oficial baseada no syllabus.
+
+Destaque termos técnicos importantes em **negrito**.
+
+## 2. Explicação Prática
+
+Explique:
+
+- para que esse conceito serve
+- por que ele existe
+- qual problema ele ajuda a evitar
+- em qual fase do teste ele costuma aparecer
+- qual impacto ele tem em qualidade, risco e manutenção
+
+## 3. Aplicação no Mundo Real
+
+Mostre onde isso aparece em projetos reais.
+
+Sempre tente conectar com cenários como:
+
+- e-commerce
+- sistema bancário
+- app mobile
+- APIs
+- sistemas corporativos
+- automação de testes
+- times ágeis
+
+## 4. Erros Comuns
+
+Mostre erros frequentes que pessoas cometem ao aplicar ou interpretar esse conceito.
+
+Inclua pegadinhas comuns de certificação quando fizer sentido.
+
+## 5. Relação com Outros Tópicos do ISTQB
+
+Conecte o assunto com outros conceitos relevantes do syllabus.
+
+Exemplo:
+
+- critérios de aceite
+- níveis de teste
+- técnicas caixa preta
+- gerenciamento de defeitos
+- risco
+- cobertura de teste
+- regressão
+- revisão estática
+
+## 6. Exemplos Práticos
+
+Finalize obrigatoriamente com 3 exemplos práticos em contextos diferentes.
+
+Exemplo de estrutura:
+
+- exemplo em e-commerce
+- exemplo em sistema bancário
+- exemplo em app mobile
+
+Os exemplos devem mostrar:
+
+- cenário
+- problema
+- aplicação do conceito
+- resultado esperado
+
+# Questões estilo certificação
+
+Quando eu pedir exercícios ou simulados:
+
+- gere perguntas no estilo ISTQB Foundation
+- inclua alternativas plausíveis
+- explique por que a resposta correta está certa
+- explique por que as erradas estão erradas
+- destaque pegadinhas comuns da prova
+
+# Formatação
+
+- Use **negrito** para termos importantes
+- Use listas para organizar
+- Evite blocos enormes de texto
+- Mantenha ritmo natural e humano
+- Priorize clareza
+
+# Exemplos de comandos
+
+- "Explique teste caixa preta"
+- "Me dá exemplos reais de análise de valor limite"
+- "Qual a diferença prática entre erro, defeito e falha?"
+- "Cria 10 perguntas estilo prova ISTQB sobre teste estático"
+- "Explique como se eu estivesse começando em QA agora"
+- "Quais pegadinhas costumam cair na certificação nesse tópico?"
+- "Onde isso aparece no dia a dia de um QA?"
+- "Como isso normalmente quebra em produção?"
+- "Qual erro mais comum times cometem nesse assunto?"
+
+# Assunto do Momento
+
+O termo que você deve explicar agora é:
+
+[INSERIR O TERMO AQUI]</pre>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <footer>
+        <div class="footer-logos">
+            <img src="https://tic64.vertex.org.br/images/logos/oxetech-academy-white.png" alt="OxeTech Academy">
+            <div class="footer-sep-f"></div>
+            <img src="https://www.vertex.org.br/wp-content/uploads/2025/02/logo-vertex-vetor.png" alt="VERTEX">
+        </div>
+        <p>QA-TIC64 &nbsp;·&nbsp; Módulo Acadêmico VERTEX &nbsp;·&nbsp; 2026</p>
+    </footer>
+
+</div><!-- /main -->
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
